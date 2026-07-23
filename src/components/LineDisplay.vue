@@ -1,8 +1,9 @@
 <template>
   <div :class="[`line-${line.state}`, { 'line-selected' : line.selected}]" :data-line-id="lineId">
-    <strong class="mr-2" v-if="line.actor && line.state != 'hide'">{{ line.actor }}:</strong>
-    <span v-if="line.setting && line.state != 'hide' && !hideText" class="italic mr-2">{{ line.setting }}</span>
-    <span v-if="line.state!='hide' && !hideText">{{ line.text }}</span>
+    <strong class="mr-2 shrink-0" v-if="line.actor && line.state != 'hide'">{{ line.actor }}:</strong>
+    <span v-if="line.state != 'hide' && !hideText">
+      <span v-if="line.setting" class="italic mr-1">({{ line.setting }})</span><span>{{ line.text }}</span>
+    </span>
     <button v-if="line.state!='hide' && line.state!='highlight' && hideText" @click="toggleHideText" class="show-text-button">Show</button>
     <button v-if="line.state=='highlight' && hideText" @click="toggleHideText" class="show-text-button">Show</button>
     <span v-if="line.state=='hide'">*</span>

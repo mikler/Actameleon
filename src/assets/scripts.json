@@ -23,6 +23,11 @@
         "name": "le_bourgeois_gentilhomme",
         "title": "Мещанин во дворянстве",
         "url": "/scripts/le_bourgeois_gentilhomme.json"
+    },
+    {
+        "name": "tristan_izota",
+        "title": "Трышчан і Іжота",
+        "url": "/scripts/tristan_izota.json"
     }
 
 ]

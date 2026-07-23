@@ -13,6 +13,7 @@
     "parse-memorialpray": "node parse_regexp.js public/scripts/memorialpray.md public/scripts/memorialpray.json",
     "parse-twisters": "node parse_regexp.js public/scripts/twisters.md public/scripts/twisters.json",
     "parse-lbg": "node parse_regexp.js ./public/scripts/le_bourgeois_gentilhomme.md public/scripts/le_bourgeois_gentilhomme.json",
+    "parse-tristan": "node parse_regexp.js public/scripts/tristan_izota.md public/scripts/tristan_izota.json",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
